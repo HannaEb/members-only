@@ -1,24 +1,29 @@
-# README
+# Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
 
-Things you may want to cover:
+Members Only is a simple Rails application that relies on authentication with Devise to create and view posts. Non-members are able to read posts but only members can see who wrote a post and create posts themselves.
 
-* Ruby version
+The application is part of The Odin Project's Ruby on Rails Curriculum (http://www.theodinproject.com).
 
-* System dependencies
 
-* Configuration
+## How to Use
 
-* Database creation
+```
+$ git clone https://github.com/HannaEb/members-only.git
+$ cd re-former
+$ bundle
+$ rake db:migrate
+$ rails server
+```
+In your browser, enter http://localhost:3000/
 
-* Database initialization
 
-* How to run the test suite
+## Testing
 
-* Services (job queues, cache servers, search engines, etc.)
+Not yet implemented.
 
-* Deployment instructions
 
-* ...
+## Author
+
+HannaEb
