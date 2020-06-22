@@ -11,7 +11,7 @@ The application is part of The Odin Project's Ruby on Rails Curriculum (http://w
 
 ```
 $ git clone https://github.com/HannaEb/members-only.git
-$ cd re-former
+$ cd members-only
 $ bundle
 $ rake db:migrate
 $ rails server
