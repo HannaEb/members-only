@@ -1,13 +1,30 @@
-<h1>Posts</h1>
-
-<% @posts.each do |p| %>
-  <strong><%= p.title %></strong></br>
-  <%= p.body %></br>
-  <% if user_signed_in? %>
-    <%= p.user.email %></br>
-  <% end %>
-<% end %>
+<h2>Posts</h2>
 
 <% if user_signed_in? %>
-  <%= link_to "Create New Post", new_post_path %>
+    <%= link_to "Create New Post", new_post_path %>
 <% end %>
+
+
+<div class="row bootstrap snippets">
+  <div class="col-md-6 col-md-offset-2 col-sm-12">
+    <div class="comment-wrapper">
+      <ul class="media-list">
+        <% @posts.each do |p| %>
+          <li class="media">
+            <div class="media-body">
+              <strong> <%= p.title %></strong><br />
+              <div class="text-secondary">
+                <% if user_signed_in? %>
+                  <%= p.user.email %>
+                <% end %>
+              </div>
+              <p>
+                <%= p.body %>
+              </p>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

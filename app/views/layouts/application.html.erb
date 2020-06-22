@@ -10,11 +10,34 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to 'Home', root_path %>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Sign in", new_user_session_path %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Sign up", new_user_registration_path %>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
 
+    <p class="notice text-success"><%= notice %></p>
+    <p class="alert text-danger"><%= alert %></p>
 
-    <%= yield %>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
 
   </body>
 </html>

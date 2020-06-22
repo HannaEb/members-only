@@ -1,2 +1,26 @@
 
 @import "bootstrap";
+
+body {
+  margin-top:20px;
+}
+
+.nav-item {
+  padding-right: 15px;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom:2px solid #efefef;
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+
+.notice {
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+.alert {
+  margin-top: 15px;
+  padding-left: 15px;
+}
