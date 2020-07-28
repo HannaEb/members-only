@@ -6,6 +6,8 @@ Members Only is a simple Rails application that relies on authentication with De
 
 The application is part of The Odin Project's Ruby on Rails Curriculum (http://www.theodinproject.com).
 
+![](public/screen_shot.png)
+
 
 ## How to Use
 
