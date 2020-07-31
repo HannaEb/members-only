@@ -23,7 +23,7 @@ In your browser, enter http://localhost:3000/
 
 ## Testing
 
-Not yet implemented.
+RSpec-Capybara. To run all the tests, simply run rspec in your terminal.
 
 
 ## Author
