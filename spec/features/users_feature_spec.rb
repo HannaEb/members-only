@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'User can sign in and out' do
+feature 'user can sign in and out' do
 
   context 'user not signed in' do
     scenario 'should display a sign up link and a sign in link' do
@@ -16,9 +16,8 @@ feature 'User can sign in and out' do
   end
 
   context 'user signed in' do
-    before do
-      sign_up_user_one
-    end
+
+    before { sign_up }
 
     scenario 'should display a sign out link' do
       expect(page).to have_link('Sign out')
@@ -28,7 +27,6 @@ feature 'User can sign in and out' do
       expect(page).not_to have_link('Sign up')
       expect(page).not_to have_link('Sign in')
     end
-
   end
 
 end
